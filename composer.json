@@ -1,0 +1,37 @@
+{
+  "name": "haokeed\/laravel-shop",
+  "description": "Package description here.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "haokeed",
+      "email": "390065583@qq.com"
+    }
+  ],
+  "require": {
+    "overtrue/laravel-wechat": "~5.0",
+    "haokeed/laravel-extend-database": "^1.0"
+  },
+  "replace": {
+    "haokeed/laravel-shop-wap-member": "self.version"
+  },
+  "autoload": {
+    "files": [
+      "src/Wap/Shop/Support/helpers.php"
+    ],
+    "psr-4": {
+      "Haokeed\\LaravelShop\\": "src",
+      "Haokeed\\LaravelShop\\Wap\\Member\\": "./src/Wap/Member"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Haokeed\\LaravelShop\\Wap\\Member\\Providers\\MemberServiceProvider",
+        "Haokeed\\LaravelShop\\Wap\\Shop\\Providers\\ShopServiceProvider",
+        "Haokeed\\LaravelShop\\Data\\Goods\\Providers\\GoodsServiceProvider",
+        "Haokeed\\LaravelShop\\Extend\\Artisan\\ArtisanServiceProvider"
+      ]
+    }
+  }
+}

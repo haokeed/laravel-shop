@@ -1,0 +1,17 @@
+{
+    "name": "haokeed\/laravel-shop-wap-shop",
+    "description": "miaoshu",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "haokeed",
+            "email": "390065583@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Haokeed\\LaravelShop\\Wap\\Shop\\": ""
+        }
+    }
+}

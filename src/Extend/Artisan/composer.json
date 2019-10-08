@@ -1,0 +1,17 @@
+{
+    "name": "haokeed\/laravel-shop-extend-artisan",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "15088566830",
+            "email": "390065583@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Haokeed\\LaravelShop\\Extend\\Artisan\\": ""
+        }
+    }
+}
